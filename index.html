@@ -1,61 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>jpvg.org | Próximamente</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Roboto, sans-serif;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-    .container {
-      max-width: 600px;
-      padding: 2rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-    .footer {
-      font-size: 0.9rem;
-      opacity: 0.7;
-    }
-    .btn {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background: #ffcc00;
-      color: #222;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-    .btn:hover {
-      background: #ffdd33;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JPVG | Colegio Juan Pablo Viscardo y Guzmán — Arequipa</title>
+  <meta name="description" content="Sitio oficial en construcción del Colegio Juan Pablo Viscardo y Guzmán (JPVG) - Arequipa, Perú. Próximamente matrículas, admisiones, noticias y más." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ctext y='32' font-size='32' %3E🎓%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-  <div class="container">
-    <h1>🚀 jpvg.org</h1>
-    <p>Estamos construyendo algo increíble.  
-       Muy pronto estará disponible.</p>
-    <a href="mailto:tuemail@jpvg.org" class="btn">Contáctanos</a>
-    <div class="footer">© 2025 jpvg.org | Todos los derechos reservados</div>
+  <!-- Fondo animado -->
+  <div class="bg-animated" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
   </div>
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">JPVG</div>
+      <div class="titles">
+        <h1 class="brand-name">Colegio Juan Pablo Viscardo y Guzmán</h1>
+        <p class="brand-meta">Arequipa, Perú • Formación integral con propósito</p>
+      </div>
+    </div>
+    <nav class="top-actions">
+      <a class="btn ghost" href="#faq">FAQ</a>
+      <a class="btn primary" href="mailto:contacto@jpvg.org?subject=Quiero%20sumarme%20al%20JPVG">Quiero sumarme</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="glass card hero-card">
+        <h2>¡Estamos creando el JPVG! 🎓</h2>
+        <p class="lead">
+          Una comunidad educativa moderna, humana y con visión global.
+          Muy pronto abriremos nuestro proceso de <strong>admisiones</strong> y
+          presentaremos nuestra propuesta pedagógica STEAM, artes y ciudadanía.
+        </p>
+
+        <!-- Contador (ajusta data-launch para la fecha objetivo) -->
+        <div class="countdown" data-launch="2026-03-01T12:00:00">
+          <div class="cd-item"><span class="num" id="cd-days">--</span><span class="lab">Días</span></div>
+          <div class="cd-item"><span class="num" id="cd-hours">--</span><span class="lab">Horas</span></div>
+          <div class="cd-item"><span class="num" id="cd-mins">--</span><span class="lab">Min</span></div>
+          <div class="cd-item"><span class="num" id="cd-secs">--</span><span class="lab">Seg</span></div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn primary" href="mailto:admisiones@jpvg.org?subject=Interés%20en%20admisión%20JPVG&body=Hola%2C%20quisiera%20recibir%20información%20de%20admisiones.">Interés en admisiones</a>
+          <a class="btn outline" href="mailto:talento@jpvg.org?subject=Docencia%20o%20voluntariado%20JPVG">Docentes & Voluntariado</a>
+        </div>
+
+        <ul class="pill-list" role="list">
+          <li>Pedagogía por proyectos</li>
+          <li>STEAM & Tecnología</li>
+          <li>Idiomas</li>
+          <li>Arte & Deporte</li>
+          <li>Bienestar socioemocional</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Ticker de novedades -->
+    <section class="ticker" aria-label="Novedades JPVG">
+      <div class="ticker-track">
+        <span>📣 PRÓXIMAMENTE: Presentación oficial del proyecto educativo JPVG.</span>
+        <span>🏫 UBICACIÓN: Arequipa — detalles muy pronto.</span>
+        <span>🤝 ALIANZAS: Invitamos a instituciones y empresas a colaborar.</span>
+        <span>🧪 STEAM LAB: laboratorio creativo y clubes de ciencia.</span>
+        <span>🎭 Artes: música, teatro y expresiones culturales locales.</span>
+      </div>
+    </section>
+
+    <!-- Tarjetas de propuesta -->
+    <section class="features">
+      <article class="glass card">
+        <h3>Aprender haciendo</h3>
+        <p>Metodologías activas, retos reales y proyectos interdisciplinarios que conectan el aula con la vida.</p>
+      </article>
+      <article class="glass card">
+        <h3>Excelencia con sentido</h3>
+        <p>Altos estándares académicos junto a habilidades socioemocionales, ciudadanía y ética.</p>
+      </article>
+      <article class="glass card">
+        <h3>Identidad arequipeña</h3>
+        <p>Orgullo por nuestra cultura: arte, gastronomía y tradiciones integradas al currículo.</p>
+      </article>
+      <article class="glass card">
+        <h3>Familias y comunidad</h3>
+        <p>Participación activa de familias y redes locales para un desarrollo integral del estudiante.</p>
+      </article>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq glass card">
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Cuándo abrimos admisiones?</summary>
+        <p>Pronto anunciaremos el calendario. Déjanos un correo a <a href="mailto:admisiones@jpvg.org">admisiones@jpvg.org</a> y te avisamos primero.</p>
+      </details>
+      <details>
+        <summary>¿Cuál será la propuesta educativa?</summary>
+        <p>Programa STEAM, aprendizaje por proyectos, enfoque socioemocional, artes y deportes, con identidad cultural arequipeña.</p>
+      </details>
+      <details>
+        <summary>¿Puedo colaborar con el proyecto?</summary>
+        <p>Sí. Buscamos docentes, voluntarios, aliados y patrocinadores. Escríbenos a <a href="mailto:talento@jpvg.org">talento@jpvg.org</a>.</p>
+      </details>
+      <details>
+        <summary>¿Dónde estará ubicado?</summary>
+        <p>En Arequipa. Publicaremos dirección y avances de obra en esta página.</p>
+      </details>
+    </section>
+
+    <!-- Pie con contacto -->
+    <section class="contact glass card">
+      <h2>Contacto</h2>
+      <p><strong>JPVG — Colegio Juan Pablo Viscardo y Guzmán</strong><br>
+        Arequipa, Perú<br>
+        <a href="mailto:contacto@jpvg.org">contacto@jpvg.org</a>
+      </p>
+      <div class="cta-row">
+        <a class="btn ghost" href="mailto:prensa@jpvg.org?subject=Prensa%20y%20comunicaciones">Prensa</a>
+        <a class="btn ghost" href="mailto:alianzas@jpvg.org?subject=Alianzas%20institucionales">Alianzas</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year"></span> JPVG · Hecho con 💙 en Arequipa
+  </footer>
+
+  <script>
+    // Año dinámico en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Contador
+    (function () {
+      const root = document.querySelector('.countdown');
+      if (!root) return;
+      const target = new Date(root.getAttribute('data-launch') || new Date().toISOString());
+      const d = el => document.getElementById(el);
+
+      function pad(n) { return String(n).padStart(2, '0'); }
+
+      function tick() {
+        const now = new Date();
+        const diff = target - now;
+        if (diff <= 0) {
+          d('cd-days').textContent = '00';
+          d('cd-hours').textContent = '00';
+          d('cd-mins').textContent = '00';
+          d('cd-secs').textContent = '00';
+          root.setAttribute('aria-label', 'El JPVG ha iniciado');
+          return;
+        }
+        const secs = Math.floor(diff / 1000) % 60;
+        const mins = Math.floor(diff / (1000 * 60)) % 60;
+        const hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        d('cd-days').textContent = days;
+        d('cd-hours').textContent = pad(hours);
+        d('cd-mins').textContent = pad(mins);
+        d('cd-secs').textContent = pad(secs);
+        requestAnimationFrame(tick);
+      }
+      tick();
+    })();
+
+    // Micro-interacción: elevar tarjetas al pasar el mouse en desktop
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(c => {
+      c.addEventListener('mousemove', e => {
+        const r = c.getBoundingClientRect();
+        const x = e.clientX - r.left;
+        const y = e.clientY - r.top;
+        c.style.setProperty('--mx', x + 'px');
+        c.style.setProperty('--my', y + 'px');
+      });
+      c.addEventListener('mouseleave', () => {
+        c.style.removeProperty('--mx');
+        c.style.removeProperty('--my');
+      });
+    });
+  </script>
 </body>
 </html>
-
-
